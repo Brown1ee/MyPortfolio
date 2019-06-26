@@ -15,6 +15,9 @@ export const AboutMe = styled.h1`
   color: silver;
   font-family: "Nanum Gothic", sans-serif;
   text-align: center;
+  @media (max-width: 700px) {
+    font-size: 28px;
+  }
 `;
 
 export const ViweWorkButton = styled.button`
@@ -44,6 +47,9 @@ export const MyJourney = styled.p`
   text-align: center;
   position: relative;
   padding: 30px;
+  @media (max-width: 700px) {
+    width: 90%;
+  }
 `;
 
 export const ContainerForMyJourneyAndAboutMe = styled.div`
@@ -62,12 +68,21 @@ export const MyWork = styled.h1`
   margin: 50px 0;
 `;
 
-export const ProfileImage = styled.img``;
+export const ProfileImage = styled.img`
+  @media (max-width: 700px) {
+    width: 70%;
+  }
+`;
 
 export const GlobalStyle = createGlobalStyle`
 *{
     margin: 0;
 }
+@media (max-width: 700px) {
+    *{
+    margin: 0;
+}
+  }
 `;
 export const PhotographerWeb = styled.img`
   width: 500px;
@@ -76,6 +91,10 @@ export const PhotographerWeb = styled.img`
   border-radius: 3px;
   border: 1px solid black;
   opacity: 0.3;
+  @media (max-width: 700px) {
+    width: 90%;
+    height: 250px;
+  }
 `;
 
 export const Avagram = styled.img`
@@ -85,6 +104,10 @@ export const Avagram = styled.img`
   border-radius: 3px;
   border: 1px solid black;
   opacity: 0.3;
+  @media (max-width: 700px) {
+    width: 90%;
+    height: 250px;
+  }
 `;
 export const ContainerForMyWork = styled.div`
   display: flex;
